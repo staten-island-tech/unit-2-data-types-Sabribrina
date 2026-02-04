@@ -36,13 +36,28 @@ elif temp == 68:
 else:
     print('cold') """
 
-odd = [1,3,5,7,9]
-even = [2,4,6,8,0]
-numb = 6
-if numb == odd:
-    print("odd numba")
-if numb == even:
-    print("even numba")
+""" bill = float(input("bill?"))
+tip = float(input("how much tip?"))
+total = bill+tip
+if bill > 0:
+    print(tip)
+if tip >= 0:
+    print(total) """
+
+bill = int(input("your bill..hmmm?"))
+service = input("great, good, okay, bad, horrid")
+def getTip(bill, service):
+    if service == "great":
+        print(bill*0.25)
+    if service == "good":
+        print(bill*0.2)
+    if service == "okay":
+        print(bill*0.15)
+    if service == "bad":
+        print(bill*0.1)
+    if service == "horrid":
+        print(0)
+
 
 
 
