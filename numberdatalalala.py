@@ -36,7 +36,13 @@ elif temp == 68:
 else:
     print('cold') """
 
-sentence = input("input a sentence")
+odd = [1,3,5,7,9]
+even = [2,4,6,8,0]
+numb = 6
+if numb == odd:
+    print("odd numba")
+if numb == even:
+    print("even numba")
 
 
 
