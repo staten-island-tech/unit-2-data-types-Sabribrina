@@ -44,8 +44,14 @@ if bill > 0:
 if tip >= 0:
     print(total) """
 
-bill = int(input("your bill..hmmm?"))
-service = input("great, good, okay, bad, horrid")
+""" numba = int(input("whats yo number bbg? hehehhe"))
+if numba % 2 == 0:
+    print("even")
+else:
+    print("odd") """
+
+""" bill = int(input("your bill..hmmm?"))
+service = input("great, good, okay, bad")
 def getTip(bill, service):
     if service == "great":
         print(bill*0.25)
@@ -54,15 +60,30 @@ def getTip(bill, service):
     if service == "okay":
         print(bill*0.15)
     if service == "bad":
-        print(bill*0.1)
-    if service == "horrid":
         print(0)
+getTip(bill, service) """
 
+""" moneys = int(input("wanna giv me ur money? how much ya got?"))
+factors = []
+for i in range (2, moneys):
+    if moneys % i == 0:
+        factors.append(i)
+        print(factors) """
+
+num1 = int(input("gimme a number pls"))
+num2 = int(input("giv me another number"))
+factors = []
+GCF = factors[-1]
+def GCF (num1, num2):
+    for i in range (2, num1, num2):
+        if num1 % i and num2 % i == 0:
+            factors.append(i)
+            print(factors)
+            print(GCF)
 
 
 
 """ number = int(input("give me number"))
-
 if number >= 21:
     print("can vote and gamble")
 elif(number >= 18):
