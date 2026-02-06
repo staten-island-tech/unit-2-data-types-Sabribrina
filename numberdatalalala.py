@@ -72,14 +72,17 @@ for i in range (2, moneys):
 
 num1 = int(input("gimme a number pls"))
 num2 = int(input("giv me another number"))
-factors = []
-GCF = factors[-1]
-def GCF (num1, num2):
-    for i in range (2, num1, num2):
-        if num1 % i and num2 % i == 0:
-            factors.append(i)
-            print(factors)
-            print(GCF)
+def yahoo(num1, num2):
+    GCF = 0
+    for i in range (2, num2):
+        if num1 % i == 0 and num2 % i == 0:
+            GCF = i
+    print(GCF)
+yahoo(num1, num2)
+
+""" sentence = (input("wanna giv me ur love(sentence)?"))
+y = sentence.split()
+print(len(y)) """
 
 
 
